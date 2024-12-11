@@ -3,17 +3,22 @@ import { AiFillFileImage, AiOutlineCloudUpload } from "react-icons/ai";
 import { MdDelete } from "react-icons/md";
 
 const UploadCV = () => {
-  const [cv, setCv] = useState(false);
+  const [cv, setCv] = useState<boolean | File>(false);
   const [wrongImageType, setWrongImageType] = useState(false);
 
-  const uploadImage = (e) => {
-    const selectedFile = e.target.files[0];
-    setCv(selectedFile);
+  const uploadImage = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const fileList = e.target.files;
+    if (fileList && fileList.length > 0) {
+      const selectedFile = fileList[0];
+      setCv(selectedFile);
 
-    if (selectedFile.type === "file/pdf") {
-      setWrongImageType(false);
+      if (selectedFile.type === "application/pdf") {
+        setWrongImageType(false);
+      } else {
+        setWrongImageType(true);
+      }
     } else {
-      setWrongImageType(true);
+      console.log("No file selected");
     }
   };
 

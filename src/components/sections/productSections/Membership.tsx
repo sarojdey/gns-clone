@@ -1,4 +1,3 @@
-import sub from "../../../assets/images/memberBg.jpg";
 import sub1 from "../../../assets/images/subscribe1.jpg";
 import sub2 from "../../../assets/images/subscribe2.jpg";
 import sub3 from "../../../assets/images/subscribe3.jpg";

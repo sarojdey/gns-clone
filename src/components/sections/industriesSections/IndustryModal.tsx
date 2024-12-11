@@ -1,6 +1,13 @@
 import { motion } from "framer-motion";
+import { IndustryData } from "../../../assets/constants/data";
 
-const IndustryModal = ({ selected, setSelected }) => {
+const IndustryModal = ({
+  selected,
+  setSelected,
+}: {
+  selected: IndustryData | null;
+  setSelected: React.Dispatch<React.SetStateAction<IndustryData | null>>;
+}) => {
   if (!selected) {
     return <></>;
   }

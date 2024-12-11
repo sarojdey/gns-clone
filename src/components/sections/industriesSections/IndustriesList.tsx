@@ -14,7 +14,7 @@ const Card = ({
   industriesData,
   delay,
 }: {
-  setSelected: React.Dispatch<React.SetStateAction<null>>;
+  setSelected: React.Dispatch<React.SetStateAction<IndustryData | null>>;
   industriesData: IndustryData;
   delay: number;
 }) => {
@@ -54,7 +54,7 @@ const Card = ({
 const IndustriesList = ({
   setSelected,
 }: {
-  setSelected: React.Dispatch<React.SetStateAction<null>>;
+  setSelected: React.Dispatch<React.SetStateAction<IndustryData | null>>;
 }) => {
   return (
     <div className="p-10 bg-[#2d2265]">

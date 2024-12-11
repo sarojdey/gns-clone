@@ -8,9 +8,10 @@ import IndustryInfo from "../components/sections/industriesSections/IndustryInfo
 import heroFrontBg from "../assets/images/hero-bottomInd.png";
 import heroBg from "../assets/images/heroInd.jpg";
 import GlitchText from "../components/GlitchText";
+import { IndustryData } from "../assets/constants/data";
 
 const Industries = () => {
-  const [selected, setSelected] = useState(null);
+  const [selected, setSelected] = useState<IndustryData | null>(null);
 
   return (
     <div className="w-full overflow-hidden">

@@ -11,7 +11,7 @@ import { animationYr } from "../../../assets/constants/Animations";
 const WhyChooseGns = () => {
   return (
     <m.section
-      className="flex h-screen w-full flex-col gap-5 justify-center items-center  isolate text-center text-white p-10"
+      className="flex min-h-screen w-full flex-col gap-5 justify-center items-center   text-center text-white p-10"
       style={{
         background: `linear-gradient(0deg, rgba(0,0,0,0.8), rgba(0,0,0,0.4)),url(${bg})`,
         backgroundPosition: "center",

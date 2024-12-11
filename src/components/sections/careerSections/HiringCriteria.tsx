@@ -12,13 +12,13 @@ import hiringImg from "../../../assets/images/hiring.png";
 
 const HiringCriteria = () => {
   return (
-    <section className=" bg-[#2d2265] h-screen w-full flex justify-center items-center pY-16  ">
+    <section className=" bg-[#2d2265] min-h-screen w-full flex justify-center items-center pY-16  ">
       <motion.div
         variants={staggerContainer(0)}
         initial="hidden"
         whileInView="show"
         viewport={{ once: true }}
-        className="h-full w-full about-container px-6 relative z-10 flex flex-col gap-8  md:px-14  lg:px-24 md:flex-row lg:justify-between xl:px-32 "
+        className="h-full w-full about-container px-6  py-10 relative z-10 flex flex-col gap-8  md:px-14  lg:px-24 md:flex-row lg:justify-between xl:px-32 "
       >
         <motion.div
           variants={planetVariants("right")}

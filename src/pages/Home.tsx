@@ -25,7 +25,7 @@ function Home() {
           }}
         ></div>
         <div
-          className="absolute z-20 inset-0 flex flex-col justify-center items-center"
+          className="absolute z-20 inset-0 flex flex-col text-center justify-start items-center"
           style={{
             backgroundImage: `url(${sky})`,
             backgroundSize: "cover",

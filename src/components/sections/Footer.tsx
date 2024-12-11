@@ -5,7 +5,7 @@ import fi1 from "../../assets/images/1.svg";
 import fi2 from "../../assets/images/2.svg";
 import fb from "../../assets/images/fb.png";
 import insta from "../../assets/images/Instagram.png";
-import pinterest from "../../assets/images/Pinterest.png";
+import pinterest from "../../assets/images/pinterest.png";
 import reddit from "../../assets/images/Reddit.png";
 import twitter from "../../assets/images/Twitter.png";
 import wp from "../../assets/images/wp.png";

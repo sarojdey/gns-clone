@@ -1,0 +1,543 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --secondary-1: #4cc9f0;
+  --secondary-2: #8048ef;
+  --secondary-3: #f72585;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@layer utilities {
+  @keyframes glitch {
+    0%,
+    15% {
+      text-shadow: 0.05em 0 0 white, -0.03em -0.04em 0 var(--secondary-1),
+        0.025em 0.04em 0 var(--secondary-3);
+    }
+    16%,
+    49% {
+      text-shadow: -0.05em -0.025em 0 white,
+        0.025em 0.035em 0 var(--secondary-1),
+        -0.05em -0.05em 0 var(--secondary-3);
+    }
+    50%,
+    99% {
+      text-shadow: 0.05em 0.035em 0 white, 0.03em 0 0 var(--secondary-1),
+        0 -0.04em 0 var(--secondary-3);
+    }
+    100% {
+      text-shadow: -0.05em 0 0 white, -0.025em -0.04em 0 var(--secondary-1),
+        -0.04em -0.025em 0 var(--secondary-3);
+    }
+  }
+  .input-container {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .contact-input {
+    width: 100%;
+    border: none;
+    padding: 1rem;
+    font-size: 1.6rem;
+    border-bottom: 0.2rem solid #3e09ed;
+    outline: none;
+    background: transparent;
+    border: 2px solid #fafafa;
+    color: #fff;
+    font-weight: 500;
+    font-size: 0.95rem;
+    letter-spacing: 0.5px;
+    border-radius: 25px;
+    transition: 0.3s;
+  }
+
+  .contact-label {
+    padding-left: 1rem;
+    color: white;
+    transform: translateY(1.8rem);
+    transform-origin: left top;
+    cursor: text;
+  }
+
+  .contact-input,
+  .contact-label {
+    transition: 0.2s ease-in-out;
+  }
+
+  .contact-input:focus {
+    border-bottom: 0.2rem solid var(--secondary-3);
+  }
+
+  .contact-input:focus ~ .contact-label {
+    padding: 0;
+    transform: translateY(0) scale(0.8);
+  }
+
+  .glitch {
+    position: relative;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: glitch 400ms infinite;
+  }
+
+  .glitch span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.75;
+  }
+
+  .glitch span:first-child {
+    animation: glitch 500ms infinite;
+    clip-path: polygon(0 0, 100% 0, 100% 35%, 0 35%);
+    transform: translate(-0.04em, -0.03em);
+  }
+
+  .glitch span:last-child {
+    animation: glitch 375ms infinite;
+    clip-path: polygon(0 65%, 100% 65%, 100% 100%, 0 100%);
+    transform: translate(0.04em, 0.03em);
+  }
+}
+
+@layer utilities {
+  .box-reflect {
+    -webkit-box-reflect: below 8px
+      linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2));
+  }
+}
+
+@layer utilities {
+  .text-gradient {
+    background: linear-gradient(
+      to right,
+      var(--secondary-2) 0%,
+      var(--secondary-2) 40%,
+      var(--secondary-3) 100%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+  }
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+button {
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+}
+
+.carousaldiv {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background-image: url(./assets/images/liquidBg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Montserrat", sans-serif;
+}
+
+.carousel {
+  position: relative;
+  width: 23rem;
+  height: 23rem;
+  perspective: 500px;
+  transform-style: preserve-3d;
+}
+
+@media screen and (max-width: 580px) {
+  .carousel {
+    width: 15rem;
+    height: 15rem;
+  }
+}
+.card-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform: rotateY(calc(var(--offset) * 50deg))
+    scaleY(calc(1 + var(--abs-offset) * -0.4))
+    translateZ(calc(var(--abs-offset) * -30rem))
+    translateX(calc(var(--direction) * -5rem));
+  filter: blur(calc(var(--abs-offset) * 1rem));
+  transition: all 0.3s ease-out;
+}
+.card {
+  width: 100%;
+  height: 100%;
+  padding: 2rem;
+  background: linear-gradient(to right, #e6444f 0%, #513bba 100%);
+  border-radius: 1rem;
+  color: white;
+  text-align: justify;
+  transition: all 0.3s ease-out;
+}
+.card h2 {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0 0 0.7em;
+  color: white;
+  text-shadow: -3px 3px #e10ea6;
+  text-transform: uppercase;
+}
+
+.card p,
+.card h2 {
+  transition: all 0.3s ease-out;
+  opacity: var(--active);
+}
+
+.carousal-nav {
+  color: white;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 50%;
+  z-index: 2;
+  cursor: pointer;
+  user-select: none;
+  background: unset;
+  border: unset;
+}
+.carousal-nav.carousal-left {
+  transform: translateX(-100%) translatey(-50%);
+}
+.carousal-nav.carousal-right {
+  right: 0;
+  transform: translateX(100%) translatey(-50%);
+}
+
+.circles {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 0;
+}
+
+.circles li {
+  position: absolute;
+  display: block;
+  list-style: none;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  animation-delay: 0s;
+  animation: animate 25s linear infinite;
+  bottom: 0px;
+  left: 0px;
+}
+
+.circles li:nth-child(odd) {
+  background: var(--secondary-1);
+}
+
+.circles li:nth-child(even) {
+  background: var(--secondary-3);
+}
+
+.circles li:nth-child(1) {
+  left: 10%;
+  animation-duration: 20s;
+}
+
+.circles li:nth-child(2) {
+  left: 15%;
+  animation-duration: 25s;
+}
+
+.circles li:nth-child(3) {
+  left: 20%;
+  animation-duration: 20s;
+}
+
+.circles li:nth-child(4) {
+  left: 25%;
+  animation-duration: 15s;
+}
+
+.circles li:nth-child(5) {
+  left: 30%;
+  animation-duration: 20s;
+}
+
+.circles li:nth-child(6) {
+  left: 35%;
+  animation-duration: 25s;
+}
+
+.circles li:nth-child(7) {
+  left: 40%;
+  animation-duration: 30s;
+  border-radius: 50%;
+}
+
+.circles li:nth-child(8) {
+  left: 50%;
+  animation-duration: 35s;
+}
+
+.circles li:nth-child(9) {
+  left: 55%;
+  animation-duration: 40s;
+}
+
+.circles li:nth-child(10) {
+  left: 65%;
+  animation-duration: 45s;
+}
+.circles li:nth-child(11) {
+  left: 60%;
+  animation-duration: 50s;
+}
+.circles li:nth-child(12) {
+  left: 75%;
+  animation-duration: 42s;
+}
+.circles li:nth-child(13) {
+  left: 70%;
+  animation-duration: 67s;
+}
+.circles li:nth-child(14) {
+  left: 37%;
+  animation-duration: 38s;
+}
+.circles li:nth-child(15) {
+  left: 47%;
+  animation-duration: 12s;
+}
+.circles li:nth-child(16) {
+  left: 56%;
+  animation-duration: 67s;
+}
+.circles li:nth-child(17) {
+  left: 22%;
+  animation-duration: 82s;
+}
+.circles li:nth-child(18) {
+  left: 85%;
+  animation-duration: 45s;
+}
+.circles li:nth-child(19) {
+  left: 77%;
+  animation-duration: 43s;
+}
+.circles li:nth-child(20) {
+  left: 95%;
+  animation-duration: 35s;
+}
+
+@keyframes animate {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 0;
+  }
+  50% {
+    transform: translateY(-60vh) rotate(360deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-120vh) rotate(720deg);
+    opacity: 0;
+  }
+}
+@keyframes cloud {
+  0% {
+    transform: translate(-100%);
+  }
+  100% {
+    transform: translate(100%);
+  }
+}
+
+@property --rotate {
+  syntax: "<angle>";
+  initial-value: 132deg;
+  inherits: false;
+}
+
+:root {
+  --card-height: 20rem;
+  --card-width: calc(var(--card-height) / 1.2);
+}
+
+.magic-card {
+  background: #191c29;
+  width: var(--card-width);
+  height: var(--card-height);
+  padding: 3px;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  font-size: 1.5em;
+  color: rgb(88 199 250 / 0%);
+  cursor: pointer;
+}
+
+.magic-card:hover {
+  color: rgb(88 199 250 / 100%);
+  transition: color 1s;
+}
+.magic-card:hover:before,
+.card:hover:after {
+  animation: none;
+  opacity: 0;
+}
+
+.magic-card::before {
+  content: "";
+  width: 104%;
+  height: 102%;
+  background-image: linear-gradient(
+    var(--rotate),
+    #5ddcff,
+    #3c67e3 43%,
+    #4e00c2
+  );
+  position: absolute;
+  z-index: -1;
+  top: -1%;
+  left: -2%;
+  animation: spin 2.5s linear infinite;
+}
+
+.magic-card::after {
+  position: absolute;
+  content: "";
+  top: calc(var(--card-height) / 6);
+  left: 0;
+  right: 0;
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+  transform: scale(0.8);
+  filter: blur(calc(var(--card-height) / 6));
+  background-image: linear-gradient(
+    var(--rotate),
+    #5ddcff,
+    #3c67e3 43%,
+    #4e00c2
+  );
+  opacity: 1;
+  transition: opacity 0.5s;
+  animation: spin 2.5s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    --rotate: 0deg;
+  }
+  100% {
+    --rotate: 360deg;
+  }
+}
+.clip1 {
+  clip-path: polygon(100% 0, 100% 76%, 81% 100%, 0% 100%, 0 26%, 38% 0);
+}
+
+.glassEffect {
+  background: rgba(255, 255, 255, 0.13);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(6.9px);
+  border: 1px solid rgba(255, 255, 255, 1);
+}
+
+.card__carve-v1 {
+  clip-path: polygon(0 0, 100% 10%, 100% 90%, 0% 100%);
+  background-color: #be08c1;
+  transition: all 0.5s;
+}
+
+.card__carve-v1:hover {
+  clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%);
+}
+
+.card__carve-v2 {
+  clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 90%);
+  background-color: #2d2265;
+  transition: all 0.5s;
+}
+
+.card__carve-v2:hover {
+  clip-path: polygon(0 0%, 100% 0, 100% 100%, 0 100%);
+}
+
+.cardR {
+  position: relative;
+  border-radius: 1rem;
+  overflow: hidden;
+  width: 300px;
+  height: 400px;
+  transform-style: preserve-3d;
+}
+
+.cardR .faceR {
+  border-radius: 1rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  backface-visibility: hidden;
+  transition: 1s ease-in-out;
+  transform: perspective(500px) rotateY(0deg);
+}
+
+/* .cardR .faceR.frontR {
+} */
+.cardR:hover .faceR.frontR {
+  transform: perspective(500px) rotateY(180deg);
+}
+
+.cardR .faceR.backR {
+  transform: perspective(500px) rotateY(180deg);
+}
+.cardR:hover .faceR.backR {
+  transform: perspective(500px) rotateY(360deg);
+}
+
+.cardR .faceR h2 {
+  font-size: 4em;
+  text-transform: uppercase;
+  transform: perspective(500px) translateZ(50px);
+}

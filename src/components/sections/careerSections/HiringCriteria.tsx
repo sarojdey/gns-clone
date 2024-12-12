@@ -12,7 +12,7 @@ import hiringImg from "../../../assets/images/hiring.png";
 
 const HiringCriteria = () => {
   return (
-    <section className=" bg-[#181424] min-h-screen w-full flex justify-center items-center py-16  ">
+    <div className=" bg-[#181424] md:min-h-screen w-full flex justify-center items-center py-16  ">
       <motion.div
         variants={staggerContainer(0)}
         initial="hidden"
@@ -67,7 +67,7 @@ const HiringCriteria = () => {
           </div>
         </motion.div>
       </motion.div>
-    </section>
+    </div>
   );
 };
 

@@ -23,16 +23,16 @@ const UploadCV = () => {
   };
 
   return (
-    <section className="bg-[#2d2265] text-white text-center flex justify-center items-center">
+    <div className="bg-[#181424] text-white text-center flex justify-center items-center">
       <div className="h-full w-full lg:p-20 p-10 flex gap-10 md:flex-row flex-col justify-start items-center">
         <div className="basis-full flex justify-center items-center flex-col gap-5">
           <h2
-            className="text-gradient uppercase text-4xl font-semibold"
+            className="text-gradient uppercase text-2xl md:text-4xl font-bold"
             style={{ textShadow: "2px -2px white" }}
           >
             upload your cv
           </h2>
-          <p className="text-xl">
+          <p className="md:text-xl">
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem
             quo esse cupiditate odit possimus deleniti vel velit tenetur ut
             deserunt.
@@ -84,7 +84,7 @@ const UploadCV = () => {
           )}
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 

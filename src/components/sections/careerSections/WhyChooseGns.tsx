@@ -9,14 +9,14 @@ import { animationYr } from "../../../assets/constants/Animations";
 
 const WhyChooseGns = () => {
   return (
-    <m.section
-      className="bg-[#181424] flex min-h-screen w-full flex-col gap-5 justify-center items-center   text-center text-white p-10 pb-32"
+    <m.div
+      className="bg-[#181424] flex md:min-h-screen w-full flex-col gap-5 justify-center items-center   text-center text-white p-10 md:pb-32"
       initial={"offScreen"}
       whileInView={"onScreen"}
       viewport={{ once: true, amount: 0.25 }}
     >
       <m.div
-        className=" space-y-5 lg:w-1/2 md:full px-5 "
+        className="space-y-3 lg:w-1/2 md:full px-5 "
         variants={animationYr}
         transition={{ delay: 0.3, duration: 1 }}
       >
@@ -36,7 +36,7 @@ const WhyChooseGns = () => {
       </m.div>
 
       <m.div
-        className="flex  md:flex-row flex-col p-10 md:pb-0 pb-32   gap-5 isolate  "
+        className="flex  md:flex-row flex-col p-10   gap-5 isolate  "
         variants={animationYr}
         transition={{ delay: 0.9, duration: 1 }}
       >
@@ -85,7 +85,7 @@ const WhyChooseGns = () => {
           </div>
         </m.div>
       </m.div>
-    </m.section>
+    </m.div>
   );
 };
 

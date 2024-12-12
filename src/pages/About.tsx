@@ -9,17 +9,19 @@ import heroBg from "../assets/images/4997264_3380 [Converted].png";
 import herobgBike from "../assets/images/4997264_33801 [Converted].png";
 import herobgstone from "../assets/images/4997264_33802[Converted].png";
 
-import bgRock from "../assets/images/4997264_338032rock[Converted].png";
+import { BiSolidBadgeCheck } from "react-icons/bi";
+import { FaScrewdriverWrench } from "react-icons/fa6";
+import { MdOutlineFlashOn } from "react-icons/md";
 import bgimg from "../assets/images/4997264_33803.png";
+import bgRock from "../assets/images/4997264_338032rock[Converted].png";
 import cloud from "../assets/images/cloud.png";
-import moonBg from "../assets/images/moonBg.jpg";
 import logo from "../assets/images/HSClogo.png";
+import moonBg from "../assets/images/moonBg.jpg";
 
-import skillsimg3 from "../assets/images/JPEG image 20.jpeg";
-import skillsimg2 from "../assets/images/JPEG image 21.jpeg";
-import skillsimg1 from "../assets/images/JPEG image 24.jpeg";
-import Text from "../components/Text";
+import { animationYr } from "../assets/constants/Animations";
+
 import GlitchText from "../components/GlitchText";
+import Text from "../components/Text";
 
 const About = () => {
   const bikeRef = useRef(null);
@@ -159,38 +161,41 @@ const About = () => {
           </p>
         </div>
 
-        <div className="w-full h-full flex gap-5 lg:flex-row flex-col justify-around items-center bg-aboutBg isolate ">
-          <div className="magic-card flex justify-center items-center isolate relative">
-            <h4 className=" uppercase font-semibold  z-30 text-white">
-              we are flexible
-            </h4>
-            <img
-              src={skillsimg1}
-              alt=""
-              className="absolute w-full h-full object-cover z-10 "
-            />
-          </div>
-          <div className="magic-card flex justify-center items-center isolate relative">
-            <h4 className=" uppercase font-semibold  z-30 text-white">
-              we are fast
-            </h4>
-            <img
-              src={skillsimg2}
-              alt=""
-              className=" absolute w-full h-full object-cover z-10"
-            />
-          </div>
-          <div className="magic-card flex justify-center items-center isolate relative">
-            <h4 className=" uppercase font-semibold  z-30 text-white">
-              we are discipline
-            </h4>
-            <img
-              src={skillsimg3}
-              alt=""
-              className="absolute w-full h-full object-cover z-10 "
-            />
-          </div>
-        </div>
+        <m.div
+          className="flex  md:flex-row flex-col p-10   gap-5 isolate  "
+          variants={animationYr}
+          transition={{ delay: 0.9, duration: 1 }}
+        >
+          <m.div className=" magic-card  md:!h-[20vw] !h-56 aspect-square magic-card  relative ">
+            <div className="absolute h-full w-full bg-blue-400 rounded-lg opacity-20 backdrop-blur-lg "></div>
+
+            <div className="absolute inset-0 flex text-gray-300 hover:text-white flex-col gap-5 justify-center items-center ">
+              <FaScrewdriverWrench className="text-6xl " />
+              <h3 className="font-extrabold uppercase text-2xl">
+                We are flexible
+              </h3>
+            </div>
+          </m.div>
+          <m.div className=" magic-card  md:!h-[20vw] !h-56 aspect-square magic-card  relative ">
+            <div className="absolute h-full w-full bg-blue-400 rounded-lg opacity-20 backdrop-blur-lg "></div>
+
+            <div className="absolute inset-0 flex text-gray-300 hover:text-white flex-col gap-5 justify-center items-center ">
+              <MdOutlineFlashOn className="text-6xl " />
+              <h3 className="font-extrabold uppercase text-2xl">We are fast</h3>
+            </div>
+          </m.div>
+
+          <m.div className=" magic-card  md:!h-[20vw] !h-56 aspect-square magic-card  relative ">
+            <div className="absolute h-full w-full bg-blue-400 rounded-lg opacity-20 backdrop-blur-lg "></div>
+
+            <div className="absolute inset-0 flex text-gray-300 hover:text-white flex-col gap-5 justify-center items-center ">
+              <BiSolidBadgeCheck className="text-6xl " />
+              <h3 className="font-extrabold uppercase text-2xl">
+                We are discipline
+              </h3>
+            </div>
+          </m.div>
+        </m.div>
       </section>
 
       <Founder />

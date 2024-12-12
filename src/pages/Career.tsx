@@ -27,7 +27,9 @@ const Career = () => {
       </section>
 
       <GnsDetails />
+      <div className=" w-full h-[100px] bg-gradient-to-b from-[#241b4d] to-[#181424]"></div>
       <WhyChooseGns />
+
       <HiringCriteria />
       <JoinUs />
       <UploadCV />

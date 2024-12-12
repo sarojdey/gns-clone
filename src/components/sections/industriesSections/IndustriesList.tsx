@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { industriesData } from "../../../assets/constants/data";
 import { IndustryData } from "../../../assets/constants/data";
+import Text from "../../Text";
 const animationGrid = {
   offScreen: { y: 100, opacity: 0 },
   onScreen: {
@@ -57,10 +58,11 @@ const IndustriesList = ({
   setSelected: React.Dispatch<React.SetStateAction<IndustryData | null>>;
 }) => {
   return (
-    <div className="p-10 bg-[#2d2265]">
-      <h1 className="text-center font-bold uppercase text-4xl mb-8 text-white">
-        industries we serve
-      </h1>
+    <div className="p-10 bg-gradient-to-b from-[#2d2265] to-[#0e0928]">
+      <div className="mb-10">
+        {" "}
+        <Text>industries we serve</Text>
+      </div>
       <div className="columns-3 md:columns-4  row-auto md:gap-10 gap-2 ">
         {industriesData.map((industriesData, i) => (
           <Card

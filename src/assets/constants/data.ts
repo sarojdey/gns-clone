@@ -550,7 +550,7 @@ export const industriesData: IndustryData[] = [
 ];
 
 export const hiringCriteria: string[] = [
-  "Lorem, ipsum dolor sit amet consectetur adipisicing elit",
-  "Reprehenderit, maiores? dolor sit amet to be safe",
-  "Lorem, ipsum dolor sit amet, Reprehenderit, maiores?",
+  "Possess strong technical skills and problem-solving abilities, with experience in real-world projects.",
+  "Demonstrate excellent communication and teamwork skills, ensuring smooth collaboration in a team environment.",
+  "Have a passion for continuous learning and professional growth, staying updated with the latest industry trends.",
 ];

@@ -1,28 +1,22 @@
-import bg from "../../../assets/images/join-us-bg.svg";
 import Button from "../../Button";
 
 const JoinUs = () => {
   return (
-    <section className="bg-[#2d2265] h-screen w-full">
-      <div
-        className="h-full w-full bg-cover bg-center flex p-20"
-        style={{ backgroundImage: `url(${bg})` }}
-      >
-        <div className="basis-full  flex justify-center items-center flex-col gap-5">
-          <h2
-            className="text-gradient uppercase text-6xl font-bold "
-            style={{ textShadow: "4px -4px white" }}
-          >
-            open for internship
-          </h2>
-          <p className="text-black text-xl">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem
-            quo esse cupiditate odit possimus deleniti vel velit tenetur ut
-            deserunt.
-          </p>
-          <Button>Join Us</Button>
-        </div>
-        <div className="basis-full md:inline-block hidden"></div>
+    <section className="bg-[#181424] h-screen w-full flex justify-center items-center">
+      <div className="magic-card2 flex-col z-10 max-w-[600px]  !p-16 gap-5">
+        <div className="absolute h-full w-full bg-black rounded-lg opacity-20 backdrop-blur-lg "></div>
+        <h2
+          className="text-gradient uppercase text-6xl font-bold "
+          style={{ textShadow: "4px -4px white" }}
+        >
+          open for internship
+        </h2>
+        <p className="text-white text-xl font-medium">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem
+          quo esse cupiditate odit possimus deleniti vel velit tenetur ut
+          deserunt.
+        </p>
+        <Button>Join Us</Button>
       </div>
     </section>
   );

@@ -33,8 +33,10 @@ const Industries = () => {
       >
         {" "}
       </section>
+      <div className=" w-full h-[200px] bg-gradient-to-b from-[#2d2265] to-[#171323]"></div>
 
       <IndustryInfo />
+      <div className=" w-full h-[200px] bg-gradient-to-b from-[#171323] to-[#2d2265]"></div>
 
       <IndustriesList setSelected={setSelected} />
       <IndustryModal selected={selected} setSelected={setSelected} />

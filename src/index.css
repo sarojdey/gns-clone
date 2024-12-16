@@ -452,7 +452,7 @@ button {
 
 .magic-card {
   border-width: 1px;
-  border-color: #74e8ff;
+  border-color: #9900ff;
 
   padding: 3px;
   position: relative;
@@ -463,6 +463,7 @@ button {
   display: flex;
   font-size: 1.5em;
   cursor: pointer;
+  overflow: hidden;
 }
 
 .magic-card:hover:before {
@@ -471,7 +472,12 @@ button {
   width: calc(100% + 5px);
   border-radius: 8px;
 
-  background-image: linear-gradient(var(--rotate), #3c67e3, #4e00c2);
+  background-image: linear-gradient(
+    var(--rotate),
+    #ff00b3,
+    #9d00ff 43%,
+    #7100c2
+  );
   position: absolute;
   z-index: -1;
   top: 50%;
@@ -493,9 +499,9 @@ button {
   filter: blur(80px);
   background-image: linear-gradient(
     var(--rotate),
-    #5ddcff,
-    #3c67e3 43%,
-    #4e00c2
+    #ff00b3,
+    #9d00ff 43%,
+    #7100c2
   );
   opacity: 1;
   transition: opacity 0.5s;
@@ -535,7 +541,7 @@ button {
   animation: spin 2.5s linear infinite;
 }
 
-.magic-card2::after {
+/* .magic-card2::after {
   position: absolute;
   content: "";
   z-index: -1;
@@ -555,7 +561,7 @@ button {
   opacity: 1;
   transition: opacity 0.5s;
   animation: spin 5s linear infinite;
-}
+} */
 
 @keyframes spin {
   0% {

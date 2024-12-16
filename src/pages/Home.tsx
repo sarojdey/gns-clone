@@ -1,7 +1,6 @@
 import base from "../assets/images/base.png";
 import homeBg from "../assets/images/bg.png";
 import building from "../assets/images/building.png";
-import sky from "../assets/images/sky.png";
 import Button from "../components/Button";
 import GlitchText from "../components/GlitchText";
 import Contact from "../components/sections/ContactUs";
@@ -14,7 +13,7 @@ import Text from "../components/Text";
 
 function Home() {
   return (
-    <div className="w-full overflow-hidden">
+    <div className="w-full overflow-hidden isolate">
       <section className="fixed top-0 left-0 -z-30 h-screen w-screen">
         <div
           className="absolute inset-0"
@@ -24,14 +23,7 @@ function Home() {
             backgroundPosition: "center",
           }}
         ></div>
-        <div
-          className="absolute z-20 inset-0 flex flex-col text-center justify-start items-center"
-          style={{
-            backgroundImage: `url(${sky})`,
-            backgroundSize: "cover",
-            backgroundPosition: "left",
-          }}
-        >
+        <div className="absolute z-20 inset-0 flex flex-col text-center justify-start items-center">
           <p className="mt-32 mb-2 uppercase tracking-[.5rem]">
             the future tech service
           </p>
@@ -54,10 +46,8 @@ function Home() {
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
-      >
-        {" "}
-      </section>
-      <section className="bg-[#2d2265] text-center flex flex-col items-center p-10">
+      ></section>
+      <section className="bg-[#312168] text-center flex flex-col items-center p-10">
         <Text>About Us</Text>
         <p className="max-w-[50rem] text-xl tracking-normal mt-5 mb-10">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate

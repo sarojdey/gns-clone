@@ -14,7 +14,7 @@ function Navbar({
   const navigate = useNavigate();
 
   return (
-    <nav className="flex  items-center justify-between py-2 px-5 fixed z-50 w-full backdrop-blur-md border-b border-slate-600 ">
+    <nav className="flex  items-center justify-between py-2 px-5 fixed z-50 w-full backdrop-blur-md  ">
       <ul className="md:flex justify-center items-center gap-8 hidden">
         <li
           className="hover:text-[#e6444f] cursor-pointer uppercase"

@@ -14,7 +14,7 @@ const Industries = () => {
   const [selected, setSelected] = useState<IndustryData | null>(null);
 
   return (
-    <div className="w-full overflow-hidden">
+    <div className="w-full overflow-hidden isolate">
       <section
         id="baner"
         className=" w-full h-screen fixed top-0 left-0 -z-10 flex flex-col items-center text-center  text-white isolate bg-cover bg-center"

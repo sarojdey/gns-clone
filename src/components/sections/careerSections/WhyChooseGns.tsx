@@ -20,9 +20,9 @@ const WhyChooseGns = () => {
         variants={animationYr}
         transition={{ delay: 0.3, duration: 1 }}
       >
-        <h3 className=" text-4xl  font-extrabold">
+        <h3 className=" text-4xl mt-20  font-extrabold">
           Why Choose{" "}
-          <span className=" uppercase text-4xl  font-extrabold text-cyan-400">
+          <span className=" uppercase text-4xl  font-extrabold text-[#9900ff]">
             GNS
           </span>{" "}
           ?

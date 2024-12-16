@@ -14,7 +14,7 @@ import logo from "../../assets/images/HSClogo.png";
 
 const Footer = () => {
   return (
-    <footer className="bg-[#2d2265] w-full h-full flex flex-col justify-between text-center z-40">
+    <footer className="bg-[#2d2265] w-full h-full flex flex-col justify-between text-center z-40 isolate">
       <div className="flex justify-between items-center px-6 py-5 flex-col lg:flex-row gap-3 ">
         <img src={logo} alt="logo" className="w-12" />
 

@@ -43,6 +43,18 @@
     }
   }
 
+  .elevate::after {
+    content: "";
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(to bottom, transparent 60%, black);
+
+    inset: 0;
+    z-index: -1;
+    position: absolute;
+    opacity: 1;
+  }
+
   /* Gradient button */
 
   .gradient-button {
@@ -500,7 +512,6 @@ button {
 .magic-card {
   border-width: 1px;
   border-color: #891cd1;
-
   padding: 3px;
   position: relative;
   justify-content: center;

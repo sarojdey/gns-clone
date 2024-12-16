@@ -36,14 +36,14 @@ const WhyChooseGns = () => {
       </m.div>
 
       <m.div
-        className="flex  md:flex-row flex-col p-10   gap-5 isolate  "
+        className="flex h-full w-full md:w-1/2 lg:w-full  lg:flex-row flex-col p-10   gap-5 isolate  "
         variants={animationYr}
         transition={{ delay: 0.9, duration: 1 }}
       >
-        <m.div className=" magic-card  md:!h-[20vw] !h-56 aspect-square magic-card  relative ">
-          <div className="absolute h-full w-full bg-blue-400 rounded-lg opacity-20 backdrop-blur-lg "></div>
+        <m.div className=" magic-card h-full w-full  aspect-square magic-card  relative ">
+          <div className="absolute  h-full w-full bg-purple-400 rounded-lg opacity-20 backdrop-blur-lg "></div>
 
-          <div className="absolute inset-0 flex text-gray-300 hover:text-white flex-col gap-5 justify-center items-center ">
+          <div className="absolute p-4 inset-0 flex text-gray-300 hover:text-white flex-col gap-5 justify-center items-center ">
             <IoRocketSharp className="text-6xl " />
             <h3 className="font-extrabold uppercase text-3xl">Advanced</h3>
             <p className="text-sm w-4/5">
@@ -51,7 +51,7 @@ const WhyChooseGns = () => {
             </p>
           </div>
         </m.div>
-        <m.div className=" magic-card  md:!h-[20vw] !h-56 aspect-square magic-card  relative ">
+        <m.div className=" magic-card  h-full w-full  aspect-square magic-card  relative ">
           <div className="absolute h-full w-full bg-blue-400 rounded-lg opacity-20 backdrop-blur-lg "></div>
 
           <div className="absolute inset-0 flex text-gray-300 hover:text-white flex-col gap-5 justify-center items-center ">
@@ -62,7 +62,7 @@ const WhyChooseGns = () => {
             </p>
           </div>
         </m.div>
-        <m.div className=" magic-card  md:!h-[20vw] !h-56 aspect-square magic-card  relative ">
+        <m.div className=" magic-card  h-full w-full  aspect-square magic-card  relative ">
           <div className="absolute h-full w-full bg-blue-400 rounded-lg opacity-20 backdrop-blur-lg "></div>
 
           <div className="absolute inset-0 flex text-gray-300 hover:text-white flex-col gap-5 justify-center items-center ">
@@ -73,7 +73,7 @@ const WhyChooseGns = () => {
             </p>
           </div>
         </m.div>
-        <m.div className=" magic-card  md:!h-[20vw] !h-56 aspect-square magic-card  relative ">
+        <m.div className=" magic-card  h-full w-full  aspect-square magic-card  relative ">
           <div className="absolute h-full w-full bg-blue-400 rounded-lg opacity-20 backdrop-blur-lg "></div>
 
           <div className="absolute inset-0 flex text-gray-300 hover:text-white flex-col gap-5 justify-center items-center ">

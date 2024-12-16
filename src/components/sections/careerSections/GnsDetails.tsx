@@ -16,7 +16,7 @@ const GnsDetails = () => {
         onViewportEnter={() => {
           setStartCount(true);
         }}
-        className=" p-14 flex   flex-col gap-3 rounded-xl aspect-square cursor-pointer justify-center items-center border backdrop-blur-md"
+        className="h-[300px] w-[300px] p-14 flex flex-col gap-3 rounded-xl  cursor-pointer justify-center items-center border backdrop-blur-md"
       >
         {startCount ? (
           <h1 className="text-7xl font-extrabold">
@@ -28,7 +28,7 @@ const GnsDetails = () => {
         <p className="uppercase text-3xl font-bold">employees</p>
       </m.div>
 
-      <div className="  p-14  flex flex-col gap-3 rounded-xl aspect-square cursor-pointer  justify-center items-center border backdrop-blur-md">
+      <div className="  p-14  flex flex-col gap-3 rounded-xl h-[300px] w-[300px] cursor-pointer  justify-center items-center border backdrop-blur-md">
         {startCount ? (
           <h1 className="text-7xl font-extrabold">
             <CountUp start={0} end={35} duration={2} />+
@@ -38,7 +38,7 @@ const GnsDetails = () => {
         )}
         <p className="uppercase text-3xl font-bold">clients</p>
       </div>
-      <div className="  p-14  flex flex-col gap-3 rounded-xl aspect-square cursor-pointer  justify-center items-center border backdrop-blur-md">
+      <div className="  p-14  flex flex-col gap-3 rounded-xl h-[300px] w-[300px] cursor-pointer  justify-center items-center border backdrop-blur-md">
         {startCount ? (
           <h1 className="text-7xl font-extrabold">
             <CountUp start={0} end={57} duration={2} />+

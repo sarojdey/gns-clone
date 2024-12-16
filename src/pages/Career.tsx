@@ -14,7 +14,7 @@ const Career = () => {
       <div className="w-full overflow-hidden isolate">
         <div
           id="baner"
-          className="h-[120vh] w-full fixed top-0 left-0 -z-10 flex flex-col items-center text-center text-white bg-cover bg-center"
+          className="h-[100vh] w-full fixed top-0 left-0 -z-10 flex flex-col items-center text-center text-white bg-cover bg-center"
           style={{
             backgroundImage: `url(${heroBg})`,
           }}
@@ -25,7 +25,7 @@ const Career = () => {
           <GlitchText>join your dream team</GlitchText>
         </div>
 
-        <div className="h-[120vh] w-full relative">
+        <div className="h-[100vh] w-full relative">
           <div className="w-full h-full absolute inset-0 bg-gradient-to-b from-transparent to-black opacity-20"></div>
 
           <img

@@ -22,7 +22,7 @@ const WhyChooseGns = () => {
       >
         <h3 className=" text-4xl mt-20  font-extrabold">
           Why Choose{" "}
-          <span className=" uppercase text-4xl  font-extrabold text-[#9900ff]">
+          <span className=" uppercase text-4xl  font-extrabold text-[#891cd1]">
             GNS
           </span>{" "}
           ?

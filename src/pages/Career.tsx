@@ -1,5 +1,5 @@
-import heroFrontBg1 from "../assets/images/fg1.svg";
-import heroFrontBg2 from "../assets/images/fg2.svg";
+// import heroFrontBg1 from "../assets/images/fg1.svg";
+// import heroFrontBg2 from "../assets/images/fg2.svg";
 import heroBg from "../assets/images/fg1.jpg";
 import GnsDetails from "../components/sections/careerSections/GnsDetails";
 import HiringCriteria from "../components/sections/careerSections/HiringCriteria";
@@ -14,7 +14,7 @@ const Career = () => {
       <div className="w-full overflow-hidden isolate">
         <div
           id="baner"
-          className="isolate elevate h-[100vh] w-full fixed top-0 left-0 -z-10 flex flex-col items-center text-center text-white bg-cover bg-center"
+          className="isolate  h-[100vh] w-full fixed top-0 left-0 -z-10 flex flex-col items-center text-center text-white bg-cover bg-center"
           style={{
             backgroundImage: `url(${heroBg})`,
           }}
@@ -26,21 +26,22 @@ const Career = () => {
         </div>
 
         <div className="h-[100vh] w-full relative">
-          <div className="w-full h-full absolute inset-0 bg-gradient-to-b from-transparent to-black/10 "></div>
-
+          {/* <div className="w-full h-full absolute inset-0 bg-gradient-to-b from-transparent to-black/50 "></div> */}
+          {/* 
           <img
             src={heroFrontBg1}
             alt="Decorative Wave Background"
-            className="w-full h-full object-cover absolute left-0 bottom-0 z-20"
-          />
-          <img
+            className="w-full h-full object-contain absolute left-0 bottom-0 z-20"
+          /> */}
+          {/* <img
             src={heroFrontBg2}
             alt="Decorative Wave Background"
             className="w-full h-full object-cover absolute left-0 bottom-1 bg z-10"
-          />
+          /> */}
         </div>
 
         {/* Content Sections */}
+        <div className="h-[50vh] w-full bg-gradient-to-b from-transparent to-black "></div>
         <GnsDetails />
         <WhyChooseGns />
         <HiringCriteria />

@@ -7,7 +7,7 @@ const GnsDetails = () => {
   const [startCount, setStartCount] = useState(false);
 
   return (
-    <div className="bg-gradient-to-b from-[#241b4d] to-[#181424] w-full min-h-screen relative  flex justify-evenly items-center lg:flex-row flex-col  p-10 lg:gap-20 gap-10 isolate text-white ">
+    <div className="bg-gradient-to-b from-black to-[#181424] w-full min-h-screen relative  flex justify-evenly items-center lg:flex-row flex-col  p-10 lg:gap-20 gap-10 isolate text-white ">
       <div className="inset-0 mt-10 absolute -z-10">
         <img src={Map} alt="worldMAp" className="h-full w-full object-cover " />
       </div>

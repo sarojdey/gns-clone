@@ -22,7 +22,7 @@ const WhyChooseGns = () => {
       >
         <h3 className=" text-4xl mt-20  font-extrabold">
           Why Choose{" "}
-          <span className=" uppercase text-4xl  font-extrabold text-[#891cd1]">
+          <span className=" uppercase text-4xl  font-extrabold text-[#b23fff]">
             GNS
           </span>{" "}
           ?
@@ -43,7 +43,7 @@ const WhyChooseGns = () => {
         <m.div className=" magic-card h-full w-full  aspect-square magic-card  relative ">
           <div className="absolute  h-full w-full bg-purple-400 rounded-lg opacity-20 backdrop-blur-lg "></div>
 
-          <div className="absolute p-4 inset-0 flex text-gray-300 hover:text-white flex-col gap-5 justify-center items-center ">
+          <div className="absolute p-4 inset-0 flex text-gray-50 hover:text-white flex-col gap-5 justify-center items-center ">
             <IoRocketSharp className="text-6xl " />
             <h3 className="font-extrabold uppercase text-3xl">Advanced</h3>
             <p className="text-sm w-4/5">
@@ -52,9 +52,9 @@ const WhyChooseGns = () => {
           </div>
         </m.div>
         <m.div className=" magic-card  h-full w-full  aspect-square magic-card  relative ">
-          <div className="absolute h-full w-full bg-blue-400 rounded-lg opacity-20 backdrop-blur-lg "></div>
+          <div className="absolute h-full w-full bg-purple-400 rounded-lg opacity-20 backdrop-blur-lg "></div>
 
-          <div className="absolute inset-0 flex text-gray-300 hover:text-white flex-col gap-5 justify-center items-center ">
+          <div className="absolute inset-0 flex text-gray-50 hover:text-white flex-col gap-5 justify-center items-center ">
             <LuChartNoAxesCombined className="text-6xl " />
             <h3 className="font-extrabold uppercase text-3xl">Growth</h3>
             <p className="text-sm w-4/5">
@@ -63,9 +63,9 @@ const WhyChooseGns = () => {
           </div>
         </m.div>
         <m.div className=" magic-card  h-full w-full  aspect-square magic-card  relative ">
-          <div className="absolute h-full w-full bg-blue-400 rounded-lg opacity-20 backdrop-blur-lg "></div>
+          <div className="absolute h-full w-full bg-purple-400 rounded-lg opacity-20 backdrop-blur-lg "></div>
 
-          <div className="absolute inset-0 flex text-gray-300 hover:text-white flex-col gap-5 justify-center items-center ">
+          <div className="absolute inset-0 flex text-gray-50 hover:text-white flex-col gap-5 justify-center items-center ">
             <FaHandshakeSimple className="text-6xl " />
             <h3 className="font-extrabold uppercase text-3xl">Guideance</h3>
             <p className="text-sm w-4/5">
@@ -74,9 +74,9 @@ const WhyChooseGns = () => {
           </div>
         </m.div>
         <m.div className=" magic-card  h-full w-full  aspect-square magic-card  relative ">
-          <div className="absolute h-full w-full bg-blue-400 rounded-lg opacity-20 backdrop-blur-lg "></div>
+          <div className="absolute h-full w-full bg-purple-400 rounded-lg opacity-20 backdrop-blur-lg "></div>
 
-          <div className="absolute inset-0 flex text-gray-300 hover:text-white flex-col gap-5 justify-center items-center ">
+          <div className="absolute inset-0 flex text-gray-50 hover:text-white flex-col gap-5 justify-center items-center ">
             <IoMdLock className="text-6xl " />
             <h3 className="font-extrabold uppercase text-3xl">Security</h3>
             <p className="text-sm w-4/5">

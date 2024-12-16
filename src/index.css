@@ -43,6 +43,53 @@
     }
   }
 
+  /* Gradient button */
+
+  .gradient-button {
+    border: none;
+    background: linear-gradient(var(--rotate), #ff00b3, #9d00ff 43%, #7100c2);
+    color: white;
+    position: relative;
+    isolation: isolate;
+    border-radius: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    animation: spin 3s linear infinite;
+  }
+
+  .gradient-button::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: calc(100% + 5px);
+    width: calc(100% + 5px);
+    border-radius: 10px;
+    background: linear-gradient(var(--rotate), #ff00b3, #9d00ff 43%, #7100c2);
+    z-index: -2;
+    animation: spin 2s linear infinite;
+    filter: blur(30px);
+  }
+
+  .gradient-button::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: calc(100% - 7px);
+    width: calc(100% - 7px);
+    border-radius: 10px;
+    background: #1c1f2b;
+    z-index: -1;
+  }
+  .gradient-button:hover:after {
+    opacity: 0;
+  }
+
+  /* Gradient button */
+
   /* animated border card */
 
   .card-animated-border {

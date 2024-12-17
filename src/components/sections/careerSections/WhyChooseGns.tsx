@@ -16,18 +16,18 @@ const WhyChooseGns = () => {
       viewport={{ once: true, amount: 0.25 }}
     >
       <m.div
-        className="space-y-3 w-full  sm:px-5 "
+        className="space-y-3 w-full  sm:px-5 flex flex-col justify-center items-center "
         variants={animationYr}
         transition={{ delay: 0.3, duration: 1 }}
       >
         <h3 className=" text-4xl mt-20  font-extrabold">
           Why Choose{" "}
-          <span className=" uppercase text-4xl  font-extrabold text-[#b23fff]">
+          <span className=" uppercase text-4xl  font-extrabold text-[#c061ff]">
             GNS
           </span>{" "}
           ?
         </h3>
-        <p className="font-semibold text-gray-300 ">
+        <p className="font-semibold text-gray-300 md:w-[60%]">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam illum
           hic autem illo deleniti, maiores facilis nesciunt delectus eum
           assumenda repellat mollitia tenetur quo accusantium? Doloremque at

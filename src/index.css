@@ -532,9 +532,9 @@ button {
 
   background-image: linear-gradient(
     var(--rotate),
-    #ff00b3,
-    #9d00ff 43%,
-    #7100c2
+    #b300c6,
+    #6d00b0 43%,
+    #390061
   );
   position: absolute;
   z-index: -1;
@@ -557,9 +557,9 @@ button {
   filter: blur(80px);
   background-image: linear-gradient(
     var(--rotate),
-    #ff00b3,
-    #9d00ff 43%,
-    #7100c2
+    #b300c6,
+    #6d00b0 43%,
+    #390061
   );
   opacity: 1;
   transition: opacity 0.5s;

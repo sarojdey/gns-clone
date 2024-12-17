@@ -3,7 +3,7 @@
 const JoinUs = () => {
   return (
     <div className="bg-[#181424]  w-full flex  text-center justify-center items-center">
-      <div className=" flex-col z-10 w-[90%] md:w-[60%]  bg-gradient-to-b from-[#8546d3]/70 to-[#181424]  flex  justify-evenly  items-center p-8 md:p-20 rounded-lg gap-5">
+      <div className=" flex-col z-10 w-[90%] md:w-[60%]  bg-gradient-to-b from-[#9427cf]/70 to-[#181424]  flex  justify-evenly  items-center p-8 md:p-20 rounded-lg gap-5">
         <h2
           className="text-gradient uppercase text-4xl md:text-6xl font-bold "
           style={{ textShadow: "4px -4px white" }}

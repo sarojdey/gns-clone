@@ -14,6 +14,7 @@ import Industries from "./pages/Industries";
 import Product from "./pages/Product";
 import RootLayout from "./pages/RootLayout";
 import Service from "./pages/Service";
+import SignIn from "./pages/admin/auth/SignIn";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -29,6 +30,7 @@ const router = createBrowserRouter(
         <Route path="/contact" element={<Contact />}></Route>
       </Route>
       <Route path="*" element={<RootLayout />}></Route>
+      <Route path="/admin/auth" element={<SignIn />}></Route>
     </Route>
   )
 );

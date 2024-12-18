@@ -24,7 +24,7 @@ button {
 
 .signin-container {
   background: #011430;
-  min-height: 100dvh;
+  min-height: 100vh;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -34,7 +34,7 @@ button {
 }
 
 .blob-c {
-  min-height: 100dvh;
+  min-height: 100vh;
   overflow: hidden;
   position: absolute;
   width: 100%;

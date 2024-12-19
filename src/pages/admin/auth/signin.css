@@ -23,7 +23,7 @@ button {
 }
 
 .signin-container {
-  background: #011430;
+  background: #011b17;
   min-height: 100vh;
   display: flex;
   flex-direction: row;
@@ -43,7 +43,7 @@ button {
 }
 
 .shape-blob {
-  background: #0085ff;
+  background: #00ff91;
   height: 300px;
   width: 350px;
   border-radius: 40% 50% 30% 40%;
@@ -55,7 +55,7 @@ button {
   top: 40%;
 }
 .shape-blob.one {
-  background: #0085ff;
+  background: #00ff91;
   height: 200px;
   width: 250px;
   left: 10px;
@@ -66,7 +66,7 @@ button {
 }
 
 .shape-blob.two {
-  background: #0eafff;
+  background: #00ffc3;
   height: 150px;
   width: 150px;
   left: 800px;
